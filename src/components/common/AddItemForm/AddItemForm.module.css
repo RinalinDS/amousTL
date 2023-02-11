@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.textField {
+    padding: 2rem;
+}
+
+.textField label, .textField input, .textField span {
+    font-size: 1.6rem;
+}
+
+.textField p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.button svg {
+    font-size: 3.2rem;
+}
