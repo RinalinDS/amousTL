@@ -15,18 +15,18 @@ export const Todolist = memo(({title, id, filter}) => {
 
     const changeTodolistFilter = useCallback((value) => {
         dispatch(TodoAC.changeTodoFilterAC(value, id))
-    }, [])
+    }, [dispatch])
     const addTask = useCallback(function (title) {
         dispatch(TasksAC.addTaskAC(title, id));
-    }, []);
+    }, [dispatch]);
 
     const removeTodolist = useCallback(function () {
         dispatch(TodoAC.removeTodoAC(id));
-    }, []);
+    }, [dispatch]);
 
     const changeTodolistTitle = useCallback(function (title) {
         dispatch(TodoAC.changeTodoTitleAC(title, id));
-    }, []);
+    }, [dispatch]);
 
 
     return (
